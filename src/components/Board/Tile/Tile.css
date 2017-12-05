@@ -1,0 +1,19 @@
+.Tile {
+  padding-bottom: 100%;
+  width: 100%;
+  margin: 1.6%;
+  border-radius: 25px;
+  transition: background 1.0s;
+  cursor: pointer;
+  display: inline-block;
+}
+.disabled {
+  cursor: not-allowed;
+}
+
+@media (max-width: 750px) {
+  h1{
+    font-size: 24px;
+  }
+}
+  
