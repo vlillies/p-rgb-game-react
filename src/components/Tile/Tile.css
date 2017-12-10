@@ -1,0 +1,15 @@
+.Tile {
+  padding-bottom: 100%;
+  width: 100%;
+  border-radius: 35px;
+  transition: opacity .5s ease-out;
+  cursor: pointer;
+}
+.Disabled {
+  cursor: not-allowed;
+  opacity: 0;
+}
+
+.Won {
+  cursor: not-allowed;
+}
