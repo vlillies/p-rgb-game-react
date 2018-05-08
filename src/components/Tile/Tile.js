@@ -1,24 +1,24 @@
-import React from 'react'
-import classes from './Tile.css'
+import React from "react";
+import classes from "./Tile.css";
 
-const Tile = (props) => {
+const Tile = props => {
+  let activeClasses = [classes.Tile];
 
-  let activeClasses = [classes.Tile]
-
-  if(props.gameWon){
-    activeClasses.push(classes.Won)
-  } else if(props.disabled){
-    activeClasses.push(classes.Disabled)
+  if (props.gameWon) {
+    activeClasses.push(classes.Won);
+  } else if (props.disabled) {
+    activeClasses.push(classes.Disabled);
   }
 
-
-
-  let displayClasses = activeClasses.join(" ")
+  let displayClasses = activeClasses.join(" ");
 
   return (
-          <div onClick={props.clicked} className={displayClasses} style={{background: props.color}}>
-          </div>
-  )
-}
+    <div
+      onClick={props.clicked}
+      className={displayClasses}
+      style={{ background: props.color }}
+    />
+  );
+};
 
-export default Tile
+export default Tile;

@@ -1,3 +1,3 @@
-const auxil = (props) => props.children
+const auxil = props => props.children;
 
-export default auxil
+export default auxil;
