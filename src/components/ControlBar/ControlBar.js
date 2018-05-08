@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Grid, Button } from "semantic-ui-react";
 
 const controlBar = props => {
