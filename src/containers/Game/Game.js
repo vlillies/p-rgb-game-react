@@ -78,7 +78,7 @@ class App extends Component {
   };
 
   handleReset = () => {
-    this.initializeBoard();
+    this.setState({ gameWon: false }, () => this.initializeBoard());
   };
 
   handleCancel = () => {
